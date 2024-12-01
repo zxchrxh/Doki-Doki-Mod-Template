@@ -1,0 +1,11 @@
+*.rpyc
+*.rpa
+firstrun
+cache/
+saves/
+
+traceback.txt
+errors.txt
+log.txt
+
+.vscode
