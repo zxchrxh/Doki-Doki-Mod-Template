@@ -2700,4 +2700,3 @@ label m_yuri_3:
     m 1l "Sorry, I didn't really mean that~"
     m "If anything, she might accidentally hurt herself."
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

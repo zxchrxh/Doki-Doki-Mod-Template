@@ -613,4 +613,3 @@ label ch0_kill:
     $ delete_character("monika")
     $ renpy.quit()
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
