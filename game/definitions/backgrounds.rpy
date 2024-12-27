@@ -1,8 +1,8 @@
 # Backgrounds
-image black = "#000000"         # Black
+image black = "#000"         # Black
 image dark = "#000000e4"        # Black (with transparency)
 image darkred = "#110000c8"     # Dark red
-image white = "#ffffff"         # White
+image white = "#fff"         # White
 image splash = "bg/splash.png"  # Splash image (Team Salvato logo)
 image end:                      # End 
     truecenter
