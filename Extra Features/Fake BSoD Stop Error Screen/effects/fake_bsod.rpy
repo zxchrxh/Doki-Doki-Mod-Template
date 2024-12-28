@@ -66,7 +66,7 @@ label bsod(stop_code="CRITICAL_PROCESS_DIED", timer=0, delay=0, fullscreen_only=
     $ quick_menu = False
     $ config.allow_skipping = False
 
-    if renpy.windows and platform.release() == "10" or platform.release() == "11":
+    if renpy.windows and platform.release() == "10":
         if renpy.music.get_pos() - 0.1 < 0:
             $ renpy.music.play("<from 0 to 0.1>" + renpy.music.get_playing().split('>')[-1])
         else:
@@ -257,6 +257,6 @@ style bsod_linux_text is console_text:
     size 16
 
 image bsod_windows_blue = ConditionSwitch(
-    "platform.release() == '11'", "#023d92",
-    "platform.release() == '10'", "#0078d7"
+    "int(platform.version().split('.')[-1]) >= 22000", "#023d92",
+    "True", "#0078d7"
 )
