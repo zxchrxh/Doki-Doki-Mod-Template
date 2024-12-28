@@ -1,5 +1,28 @@
 # Fake Blue Screen of Death / Stop Error Screen
 
+# DDLC implements a fake BSoD scare during act 2.
+# This attempts to recreate that effect with more customizability.
+#
+# The Windows BSoD now has a changing percentage for the fake error reporting
+# as well as having the color of the background change depending on the version.
+# The stop code can also be changed (default: CRITICAL_PROCESS_DIED).
+#
+# There are also now kernel panic screens for macOS and
+# Linux distributions which were not present in DDLC.
+#
+# The correct stop error screen shows depending on the player's operating system.
+
+# To display a BSoD, type the following into your script.
+# call bsod (stop_code="CRITICAL_PROCESS_DIED", timer=0, delay=0, fullscreen_only=True, force_fullscreen=False)
+# You can change any of the parameters to your liking.
+
+# Parameter Definitions
+# stop_code         = The stop code to show at the bottom of the Windows BSoD.
+# timer             = The time to wait before continuing to the next interaction. If 0, wait until the player clicks.
+# delay             = The time to wait before actually starting the BSoD.
+# fullscreen_only   = If True, the BSoD will not happen if the player is not in fullscreen. Ignored if force_fullscreen is True.
+# force_fullscreen  = If True, the player will be forced into fullscreen before the BSoD shows.
+
 init python:
     class Screenshot(renpy.Displayable):
         def __init__(self):
@@ -34,9 +57,6 @@ label bsod(stop_code="CRITICAL_PROCESS_DIED", timer=0, delay=0, fullscreen_only=
 
     if fullscreen_only and not preferences.fullscreen and not force_fullscreen and not config.developer:
         return
-
-    # $ renpy.windows = False
-    # $ renpy.macintosh = True
 
     show expression Screenshot() as screenshot:
         size (config.screen_width,config.screen_height)
