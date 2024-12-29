@@ -7,3 +7,6 @@
 </div>
 
 *Doki Doki Mod Template* is, as the name implies, a template for modding *Doki Doki Literature Club!* (2017).
+
+> [!WARNING]
+> This mod template is still in development and is not yet suitable for production use.
