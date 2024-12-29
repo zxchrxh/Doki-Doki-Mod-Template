@@ -25,14 +25,13 @@ define persistent.steam = ("steamapps" in config.basedir.lower())
 # Shift+R - Reload Game
 # Shift+O - Console
 #
-# Set this to True to enable developer mode (recommended).
-#
-# Remember to change this to False before releasing you mod,
-# otherwise players may have access to developer tools!
+# Keep this set to "auto" as it will automatically set
+# developer mode on or off depending if the game is
+# run from the Ren'Py SDK or a built distribution.
 #
 # You can learn more about Ren'Py's developer mode
 # at https://renpy.org/doc/html/developer_tools.html.
-define config.developer = True
+define config.developer = "auto"
 
 # This variable determines whether or not
 # to enable auto-reload with Shift+R.
