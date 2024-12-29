@@ -7,5 +7,6 @@ saves/
 traceback.txt
 errors.txt
 log.txt
+RenPyVersionError.txt
 
 .vscode
