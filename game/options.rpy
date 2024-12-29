@@ -107,14 +107,8 @@ init python:
 
 init python:
 
-    if renpy.version_tuple >= (6,99,12,4,2187) and renpy.version_tuple[0] == 6:
-        build.package("Mod", "zip", "mod", "DDLC Mod (Ren'Py 6)") #v1 - py2
-
-    elif renpy.version_tuple <= (7,6,1,23060707) and renpy.version_tuple[0] == 7:
-        build.package("Mod", "zip", "mod", "DDLC Mod (Ren'Py 7)") #v2 - py2
-
-    elif renpy.version_tuple <= (8,1,1,23060707) and renpy.version_tuple[0] == 8:
-        build.package("Mod", "zip", "mod", "DDLC Mod (Ren'Py 8)") #v2 - py3
+    if renpy.version_tuple == (8,1,1,23060707):
+        build.package("Mod", "zip", "mod renpy windows mac linux all", "DDLC Mod")
 
     build.archive("scripts", "mod")
 
@@ -125,13 +119,30 @@ init python:
     build.classify('**/thumbs.db', None)
     build.classify('**.rpy', None)
     build.classify('**.rpa', None)
-    build.classify('game/cache/**', None)
+    build.classify('game/cache/', None)
     build.classify('game/python-packages/singleton.py', None)
     build.classify('game/firstrun', None)
+    build.classify('characters/', None)
+
+    try:
+        with open(config.basedir + '/.gitignore') as gitignore:
+            for line in gitignore:
+                line = line.strip()
+                if line == '': continue
+                build.classify(line, None)
+    except: pass
+
+    build.classify('.gitignore', None)
+    build.classify('README.md', None)
+    build.classify('LICENSE', None)
+    build.classify('Extra Features/', None)
+    build.classify('Original DDLC Scripts/', None)
 
     build.classify("game/**", "scripts")
     build.classify("README.html", "mod all")
     
     build.documentation('README.html')
+
+    build.executable_name = "DDLC"
 
     build.include_old_themes = False
