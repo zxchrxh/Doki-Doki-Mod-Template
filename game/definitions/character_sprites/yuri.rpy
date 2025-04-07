@@ -213,7 +213,7 @@ image yuri stab_2 = "yuri/stab/2.png"
 image yuri stab_3 = "yuri/stab/3.png"
 image yuri stab_4 = "yuri/stab/4.png"
 image yuri stab_5 = "yuri/stab/5.png"
-image yuri stab_6 = LiveComposite((960,960), (0, 0), "yuri/stab/6-mask.png", (0, 0), "yuri stab_6_eyes", (0, 0), "yuri/stab/6.png")
+image yuri stab_6 = Composite((960,960), (0, 0), "yuri/stab/6-mask.png", (0, 0), "yuri stab_6_eyes", (0, 0), "yuri/stab/6.png")
 
 image yuri stab_6_eyes:
     "yuri/stab/6-eyes.png"
@@ -242,7 +242,7 @@ image yuri stab_6_eyes:
         linear 10 yoffset -15
 
 
-image yuri oneeye = LiveComposite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/oneeye.png", (0, 0), "yuri oneeye2")
+image yuri oneeye = Composite((960, 960), (0, 0), "yuri/1l.png", (0, 0), "yuri/1r.png", (0, 0), "yuri/oneeye.png", (0, 0), "yuri oneeye2")
 image yuri oneeye2:
     "yuri/oneeye2.png"
     subpixel True
@@ -272,7 +272,7 @@ image yuri glitch2:
     pause 0.3
     "yuri 1"
 
-image yuri eyes = LiveComposite((1280, 720), (0, 0), "yuri/eyes1.png", (0, 0), "yuripupils")
+image yuri eyes = Composite((1280, 720), (0, 0), "yuri/eyes1.png", (0, 0), "yuripupils")
 
 image yuri eyes_base = "yuri/eyes1.png"
 

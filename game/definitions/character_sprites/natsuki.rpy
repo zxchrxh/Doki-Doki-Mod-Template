@@ -338,7 +338,7 @@ image natsuki 3 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "na
 image natsuki 4 = im.Composite((960, 960), (0, 0), "natsuki/2l.png", (0, 0), "natsuki/2r.png", (0, 0), "natsuki/1t.png")
 image natsuki 5 = im.Composite((960, 960), (18, 22), "natsuki/1t.png", (0, 0), "natsuki/3.png")
 
-image natsuki mouth = LiveComposite((960, 960), (0, 0), "natsuki/0.png", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
+image natsuki mouth = Composite((960, 960), (0, 0), "natsuki/0.png", (390, 340), "n_rects_mouth", (480, 334), "n_rects_mouth")
 
 image n_rects_mouth:
     RectCluster(Solid("#000"), 4, 15, 5).sm
