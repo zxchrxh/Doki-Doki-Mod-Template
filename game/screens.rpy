@@ -746,7 +746,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://github.com/auratmos/Doki-Doki-Mod-Template}Doki Doki Mod Template{/a} 1.0.0 and {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://github.com/zxchrxh/Doki-Doki-Mod-Template}Doki Doki Mod Template{/a} 1.0.0 and {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
 
 
 
