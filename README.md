@@ -20,6 +20,6 @@
 
 To create a DDLC mod with this template, you will need:
 - A copy of [*Doki Doki Literature Club* from itch.io](https://ddlc.moe)
-- *Doki Doki Mod Template*, downloadable on [the Releases page](https://github.com/auratmos/Doki-Doki-Mod-Template/releases/latest)
+- *Doki Doki Mod Template*, downloadable on [the Releases page](https://github.com/zxchrxh/Doki-Doki-Mod-Template/releases/latest)
 - [Ren'Py 8.1.1](https://www.renpy.org/release/8.1.1) - the version of DDLC's game engine that is required for this mod template
 - An IDE such as [Visual Studio Code](https://code.visualstudio.com/Download)
